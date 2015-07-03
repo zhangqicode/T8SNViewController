@@ -14,6 +14,9 @@
 		6D177C841B46543B00B3AE4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D177C831B46543B00B3AE4D /* Images.xcassets */; };
 		6D177C871B46543B00B3AE4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D177C851B46543B00B3AE4D /* LaunchScreen.xib */; };
 		6D177C931B46543B00B3AE4D /* T8SNViewControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D177C921B46543B00B3AE4D /* T8SNViewControllerDemoTests.m */; };
+		6D177C9F1B4654DE00B3AE4D /* T8SNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D177C9E1B4654DE00B3AE4D /* T8SNViewController.m */; };
+		6D49EBF51B46BDC600E294E6 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D49EBF41B46BDC600E294E6 /* TestViewController.m */; };
+		6D9847001B46B6740022378F /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9846FF1B46B6740022378F /* Reveal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		6D177C8C1B46543B00B3AE4D /* T8SNViewControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = T8SNViewControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D177C911B46543B00B3AE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D177C921B46543B00B3AE4D /* T8SNViewControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = T8SNViewControllerDemoTests.m; sourceTree = "<group>"; };
+		6D177C9D1B4654DE00B3AE4D /* T8SNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T8SNViewController.h; sourceTree = "<group>"; };
+		6D177C9E1B4654DE00B3AE4D /* T8SNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T8SNViewController.m; sourceTree = "<group>"; };
+		6D49EBF31B46BDC600E294E6 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		6D49EBF41B46BDC600E294E6 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		6D9846FF1B46B6740022378F /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9847001B46B6740022378F /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		6D177C6A1B46543B00B3AE4D = {
 			isa = PBXGroup;
 			children = (
+				6D9846FF1B46B6740022378F /* Reveal.framework */,
 				6D177C751B46543B00B3AE4D /* T8SNViewControllerDemo */,
 				6D177C8F1B46543B00B3AE4D /* T8SNViewControllerDemoTests */,
 				6D177C741B46543B00B3AE4D /* Products */,
@@ -85,6 +95,9 @@
 				6D177C7B1B46543B00B3AE4D /* AppDelegate.m */,
 				6D177C7D1B46543B00B3AE4D /* ViewController.h */,
 				6D177C7E1B46543B00B3AE4D /* ViewController.m */,
+				6D49EBF31B46BDC600E294E6 /* TestViewController.h */,
+				6D49EBF41B46BDC600E294E6 /* TestViewController.m */,
+				6D177C9C1B4654C800B3AE4D /* T8SNViewController */,
 				6D177C801B46543B00B3AE4D /* Main.storyboard */,
 				6D177C831B46543B00B3AE4D /* Images.xcassets */,
 				6D177C851B46543B00B3AE4D /* LaunchScreen.xib */,
@@ -117,6 +130,16 @@
 				6D177C911B46543B00B3AE4D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D177C9C1B4654C800B3AE4D /* T8SNViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6D177C9D1B4654DE00B3AE4D /* T8SNViewController.h */,
+				6D177C9E1B4654DE00B3AE4D /* T8SNViewController.m */,
+			);
+			name = T8SNViewController;
+			path = ../../T8SNViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +245,8 @@
 				6D177C7F1B46543B00B3AE4D /* ViewController.m in Sources */,
 				6D177C7C1B46543B00B3AE4D /* AppDelegate.m in Sources */,
 				6D177C791B46543B00B3AE4D /* main.m in Sources */,
+				6D177C9F1B4654DE00B3AE4D /* T8SNViewController.m in Sources */,
+				6D49EBF51B46BDC600E294E6 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +372,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = T8SNViewControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -357,8 +391,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = T8SNViewControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -416,6 +459,7 @@
 				6D177C981B46543B00B3AE4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D177C991B46543B00B3AE4D /* Build configuration list for PBXNativeTarget "T8SNViewControllerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +468,7 @@
 				6D177C9B1B46543B00B3AE4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
