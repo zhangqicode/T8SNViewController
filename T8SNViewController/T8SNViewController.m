@@ -33,6 +33,8 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+    [self setupView];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -47,6 +49,15 @@
     
     self.navigationItem.titleView = self.titleView;
     self.titleView.alpha = 0;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
 }
 
 //override
@@ -135,12 +146,15 @@
         if (offsetY>0) {
             [self.navigationController.navigationBar setBackgroundImage:[[self class] imageWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:offsetY/64.0]] forBarMetrics:UIBarMetricsDefault];
             self.titleView.alpha = offsetY/64.0;
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+            if (offsetY>64) {
+                [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+            }
         }else{
             [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
             self.titleView.alpha = 0;
             [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
         }
+        [self setupStatusOffset:offsetY/64.0];
     }
 }
 
