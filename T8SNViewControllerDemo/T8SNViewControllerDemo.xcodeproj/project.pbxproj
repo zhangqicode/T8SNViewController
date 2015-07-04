@@ -16,7 +16,6 @@
 		6D177C931B46543B00B3AE4D /* T8SNViewControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D177C921B46543B00B3AE4D /* T8SNViewControllerDemoTests.m */; };
 		6D177C9F1B4654DE00B3AE4D /* T8SNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D177C9E1B4654DE00B3AE4D /* T8SNViewController.m */; };
 		6D49EBF51B46BDC600E294E6 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D49EBF41B46BDC600E294E6 /* TestViewController.m */; };
-		6D9847001B46B6740022378F /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9846FF1B46B6740022378F /* Reveal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,6 @@
 		6D177C9E1B4654DE00B3AE4D /* T8SNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T8SNViewController.m; sourceTree = "<group>"; };
 		6D49EBF31B46BDC600E294E6 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		6D49EBF41B46BDC600E294E6 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		6D9846FF1B46B6740022378F /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9847001B46B6740022378F /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +69,6 @@
 		6D177C6A1B46543B00B3AE4D = {
 			isa = PBXGroup;
 			children = (
-				6D9846FF1B46B6740022378F /* Reveal.framework */,
 				6D177C751B46543B00B3AE4D /* T8SNViewControllerDemo */,
 				6D177C8F1B46543B00B3AE4D /* T8SNViewControllerDemoTests */,
 				6D177C741B46543B00B3AE4D /* Products */,
@@ -378,11 +374,7 @@
 				);
 				INFOPLIST_FILE = T8SNViewControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					Reveal,
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -397,11 +389,7 @@
 				);
 				INFOPLIST_FILE = T8SNViewControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					Reveal,
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
