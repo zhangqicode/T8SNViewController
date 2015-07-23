@@ -8,14 +8,6 @@
 
 #import "T8SNViewController.h"
 
-@interface T8SNViewController ()<UITableViewDataSource,UITableViewDelegate>
-
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIView *headView;
-@property (nonatomic, strong) UIView *titleView;
-
-@end
-
 @implementation T8SNViewController
 
 - (void)viewDidLoad {

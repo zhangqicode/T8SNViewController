@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface T8SNViewController : UIViewController
+@interface T8SNViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIView *headView;
+@property (nonatomic, strong) UIView *titleView;
 
 @end
